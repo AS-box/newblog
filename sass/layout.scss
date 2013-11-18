@@ -7,11 +7,11 @@
 @import "compass";
 @import "compass/utilities/general/clearfix";
 
-
 $color-orange:#e67e22;
-$backgrond-color:#ecf0f1;
+$color-green:#27ae60;
+$background-color:#ecf0f1;
 body{
-	background-color:$backgrond-color;
+	background-color:$background-color;
 }
 
 @mixin position-center{
@@ -34,7 +34,7 @@ body{
 }
 
 header{
-	background-color:$backgrond-color;
+	background-color:$background-color;
 	height:160px;
 	@include padding-top-bottom-40;
 	h1{
@@ -48,7 +48,7 @@ header{
 		@include position-center;
 		#menu li{
 			display: table-cell;
-			background-color:#27ae60;
+			background-color:$color-green;
 			height:60px;
 			width:60px;
 			text-align:center;
@@ -64,13 +64,26 @@ header{
 }
 #wrap{	
 	@include clearfix;
-	background-color:$backgrond-color;
+	background-color:$background-color;
 	width:960px;
 	@include position-center;
 	#left-wrap{
 		position:relative;
 		width:660px;
 		float:left;
+		.article_category{
+		  position:absolute;
+		  background-color:$color-orange;
+		  display:block;
+		  top:35px;
+		  left:-20px;
+		  height:25px;
+		  width:200px;
+		  text-align:right;
+		  padding-top:8px;
+		  padding-right:5px;
+		  z-index:900;
+		}
 		article{
 			background-color:#ffffff;
 			@include padding-top-bottom-40;
@@ -86,20 +99,54 @@ header{
 					margin-bottom:15px;
 				}
 			}
+			.article_title{
+				display: block;
+				min-height:58px;
+				border-bottom-width:1px;
+				border-style: dashed;
+				border-color: #e67e22;
+				vertical-align: middle;
+				h2{
+				  padding-top: 20px;
+				  display: block;
+				  margin-left:20px;
+				  width:auto;
+				}
+				.day_wrap{
+				  float:left;
+				  position:relative;
+				  width:50px;
+				  .article_date_triangle_month{
+					text-align: left;
+					width: 0;
+					height: 0;
+					border: 20px solid transparent;
+					border-top: 20px solid $color-orange;
+					border-left: 20px solid $color-orange;
+					@include border-radius(5px);
+					.day_triangle_month{
+						position:absolute;
+						left: 2px;
+						top:20px;
+					}
+				  }
+				  .article_date_triangle_day{
+					width: 0;
+					height: 0;
+					margin-top:-37px;
+					border: 20px solid transparent;
+					border-right: 20px solid $color-orange;
+					border-bottom: 20px solid $color-orange;
+					@include border-radius(5px);
+					.day_triangle_day{
+						position:absolute;
+						right:12px;
+					}
+				  }
+				}
+			}
 		}
-		.article_date{
-		position:absolute;
-		background-color:$color-orange;
-		display:block;
-		top:35px;
-		left:-20px;
-		height:25px;
-		width:200px;
-		text-align:right;
-		padding-top:8px;
-		padding-right:5px;
-		z-index:900;
-		}
+
 	}
 	#right-wrap{
 		background-color:#3498db;

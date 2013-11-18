@@ -31,22 +31,27 @@ nav .text_Icon {
 }
 
 /* line 34, ../sass/font.scss */
+h2, h4, .article_category, .day_wrap {
+  font-family: mplus-1p-bold;
+}
+
+/* line 39, ../sass/font.scss */
 h1 {
   font-family: "Chango", cursive;
   color: #e67e22;
   font-size: 48px;
 }
 
-/* line 42, ../sass/font.scss */
+/* line 46, ../sass/font.scss */
+#left-wrap .article_category, #left-wrap .day_wrap {
+  color: white;
+}
+
+/* line 53, ../sass/font.scss */
 #left-wrap article h2 {
   font-size: 30px;
-  font-family: mplus-1p-bold;
 }
-/* line 47, ../sass/font.scss */
-#left-wrap article section h4 {
-  font-family: mplus-1p-bold;
-}
-/* line 52, ../sass/font.scss */
-#left-wrap .article_date {
-  color: white;
+/* line 57, ../sass/font.scss */
+#left-wrap .article_date_year {
+  color: #2c3e50;
 }

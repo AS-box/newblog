@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="css/layout.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -133,29 +133,7 @@ header nav #menu li .fa {
   float: left;
 }
 /* line 74, ../sass/layout.scss */
-#wrap #left-wrap article {
-  background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-top: 90px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-left: 20px;
-}
-/* line 80, ../sass/layout.scss */
-#wrap #left-wrap article p {
-  margin-bottom: 40px;
-}
-/* line 83, ../sass/layout.scss */
-#wrap #left-wrap article section {
-  margin-top: 15px;
-}
-/* line 85, ../sass/layout.scss */
-#wrap #left-wrap article section h4 {
-  margin-bottom: 15px;
-}
-/* line 90, ../sass/layout.scss */
-#wrap #left-wrap .article_date {
+#wrap #left-wrap .article_category {
   position: absolute;
   background-color: #e67e22;
   display: block;
@@ -168,7 +146,90 @@ header nav #menu li .fa {
   padding-right: 5px;
   z-index: 900;
 }
-/* line 104, ../sass/layout.scss */
+/* line 87, ../sass/layout.scss */
+#wrap #left-wrap article {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 20px;
+}
+/* line 93, ../sass/layout.scss */
+#wrap #left-wrap article p {
+  margin-bottom: 40px;
+}
+/* line 96, ../sass/layout.scss */
+#wrap #left-wrap article section {
+  margin-top: 15px;
+}
+/* line 98, ../sass/layout.scss */
+#wrap #left-wrap article section h4 {
+  margin-bottom: 15px;
+}
+/* line 102, ../sass/layout.scss */
+#wrap #left-wrap article .article_title {
+  display: block;
+  min-height: 58px;
+  border-bottom-width: 1px;
+  border-style: dashed;
+  border-color: #e67e22;
+  vertical-align: middle;
+}
+/* line 109, ../sass/layout.scss */
+#wrap #left-wrap article .article_title h2 {
+  padding-top: 20px;
+  display: block;
+  margin-left: 20px;
+  width: auto;
+}
+/* line 115, ../sass/layout.scss */
+#wrap #left-wrap article .article_title .day_wrap {
+  float: left;
+  position: relative;
+  width: 50px;
+}
+/* line 119, ../sass/layout.scss */
+#wrap #left-wrap article .article_title .day_wrap .article_date_triangle_month {
+  text-align: left;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid #e67e22;
+  border-left: 20px solid #e67e22;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 127, ../sass/layout.scss */
+#wrap #left-wrap article .article_title .day_wrap .article_date_triangle_month .day_triangle_month {
+  position: absolute;
+  left: 2px;
+  top: 20px;
+}
+/* line 133, ../sass/layout.scss */
+#wrap #left-wrap article .article_title .day_wrap .article_date_triangle_day {
+  width: 0;
+  height: 0;
+  margin-top: -37px;
+  border: 20px solid transparent;
+  border-right: 20px solid #e67e22;
+  border-bottom: 20px solid #e67e22;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 141, ../sass/layout.scss */
+#wrap #left-wrap article .article_title .day_wrap .article_date_triangle_day .day_triangle_day {
+  position: absolute;
+  right: 12px;
+}
+/* line 151, ../sass/layout.scss */
 #wrap #right-wrap {
   background-color: #3498db;
   width: 260px;
