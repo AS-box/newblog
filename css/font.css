@@ -9,59 +9,71 @@
   src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-bold.ttf") format("truetype");
 }
 
-/* line 18, ../sass/font.scss */
+/* line 20, ../sass/font.scss */
 body {
   font-family: mplus-1p-regular;
   color: #2c3e50;
 }
 
-/* line 23, ../sass/font.scss */
+/* line 25, ../sass/font.scss */
 nav {
   font-size: 35px;
 }
-/* line 25, ../sass/font.scss */
+/* line 27, ../sass/font.scss */
 nav .fa {
   color: white;
 }
-/* line 28, ../sass/font.scss */
+/* line 30, ../sass/font.scss */
 nav .text_Icon {
   font-family: mplus-1p-bold;
   color: white;
   font-size: 30px;
 }
 
-/* line 35, ../sass/font.scss */
+/* line 37, ../sass/font.scss */
 .h2, h4, .article_category, .day_wrap {
   font-family: mplus-1p-bold;
 }
 
-/* line 40, ../sass/font.scss */
+/* line 42, ../sass/font.scss */
 h1 {
   font-family: "Chango", cursive;
   color: #e67e22;
   font-size: 48px;
 }
 
-/* line 47, ../sass/font.scss */
+/* line 49, ../sass/font.scss */
 #left-wrap .article_category, #left-wrap .day_wrap {
   color: white;
 }
 
-/* line 54, ../sass/font.scss */
+/* line 56, ../sass/font.scss */
 #left-wrap article .h2 {
   font-size: 30px;
 }
-/* line 57, ../sass/font.scss */
+/* line 59, ../sass/font.scss */
 #left-wrap article h4 {
   font-size: 20px;
 }
-/* line 60, ../sass/font.scss */
+/* line 62, ../sass/font.scss */
 #left-wrap article i {
   color: #e67e22;
   font-size: 25px;
   margin-right: 5px;
 }
-/* line 66, ../sass/font.scss */
+/* line 68, ../sass/font.scss */
 #left-wrap .article_date_year {
   color: #2c3e50;
+}
+
+/* line 73, ../sass/font.scss */
+.last_logo {
+  font-family: "Chango", cursive;
+  color: #27ae60;
+  font-size: 30px;
+}
+
+/* line 79, ../sass/font.scss */
+footer {
+  color: white;
 }

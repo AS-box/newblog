@@ -7,9 +7,12 @@
 @import "compass";
 @import "compass/utilities/general/clearfix";
 
+
+
 $color-orange:#e67e22;
 $color-green:#27ae60;
 $background-color:#ecf0f1;
+
 body{
 	background-color:$background-color;
 }
@@ -26,6 +29,17 @@ body{
 @mixin padding-left-right-40{
 	padding-left:40px;
 	padding-right:40px;
+}
+
+@mixin margin-top-bottom-40{
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+
+@mixin margin-centering{
+	margin-right:auto;
+	margin-left: auto;
 }
 .header_belt{
 	height:20px;
@@ -150,14 +164,48 @@ header{
 				  }
 			  }
 		}
+		#pager_wrap{
+		  @include margin-top-bottom-40;
+		  @include margin-centering;
+		  width:260px;
+		  .article_prev{
+			float: left;
+			width:80px;
+			margin-right:100px;
+		  }
+		  .article_next{
+			@include clearfix;
+			width:80px;
+		  }
+		}
+
+
 
 	}
 	#right-wrap{
-		background-color:#3498db;
+		background-color:#ffffff;
 		width:260px;
 		@include padding-top-bottom-40;
 		@include clearfix;
 		padding-left:20px;
 		padding-right:20px;
+	}
+}
+	.last_logo{
+		margin-top: 40px;
+		width:211px;
+}
+
+footer{
+	display: table;
+	background-color:$color-green;
+	height:25px;
+	width:100%;
+	.footer_sentence{
+		display: table-cell;
+		vertical-align: middle;
+		p{
+		  padding-left: 10px;
+		}
 	}
 }
