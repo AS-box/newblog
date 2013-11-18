@@ -170,27 +170,32 @@ header nav #menu li .fa {
 }
 /* line 102, ../sass/layout.scss */
 #wrap #left-wrap article .article_title {
-  display: block;
+  display: table;
   min-height: 58px;
   border-bottom-width: 1px;
   border-style: dashed;
   border-color: #e67e22;
   vertical-align: middle;
+  width: 560px;
+  text-align: left;
 }
-/* line 109, ../sass/layout.scss */
-#wrap #left-wrap article .article_title h2 {
-  padding-top: 20px;
-  display: block;
-  margin-left: 20px;
-  width: auto;
+/* line 111, ../sass/layout.scss */
+#wrap #left-wrap article .article_title .h2 {
+  display: table-cell;
+  vertical-align: middle;
 }
-/* line 115, ../sass/layout.scss */
+/* line 114, ../sass/layout.scss */
+#wrap #left-wrap article .article_title .h2 h2 {
+  width: 500px;
+  margin-left: 0px;
+}
+/* line 119, ../sass/layout.scss */
 #wrap #left-wrap article .article_title .day_wrap {
   float: left;
   position: relative;
   width: 50px;
 }
-/* line 119, ../sass/layout.scss */
+/* line 123, ../sass/layout.scss */
 #wrap #left-wrap article .article_title .day_wrap .article_date_triangle_month {
   text-align: left;
   width: 0;
@@ -204,13 +209,13 @@ header nav #menu li .fa {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 127, ../sass/layout.scss */
+/* line 131, ../sass/layout.scss */
 #wrap #left-wrap article .article_title .day_wrap .article_date_triangle_month .day_triangle_month {
   position: absolute;
   left: 2px;
   top: 20px;
 }
-/* line 133, ../sass/layout.scss */
+/* line 137, ../sass/layout.scss */
 #wrap #left-wrap article .article_title .day_wrap .article_date_triangle_day {
   width: 0;
   height: 0;
@@ -224,12 +229,12 @@ header nav #menu li .fa {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 141, ../sass/layout.scss */
+/* line 145, ../sass/layout.scss */
 #wrap #left-wrap article .article_title .day_wrap .article_date_triangle_day .day_triangle_day {
   position: absolute;
   right: 12px;
 }
-/* line 151, ../sass/layout.scss */
+/* line 155, ../sass/layout.scss */
 #wrap #right-wrap {
   background-color: #3498db;
   width: 260px;

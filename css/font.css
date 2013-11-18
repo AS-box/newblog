@@ -31,7 +31,7 @@ nav .text_Icon {
 }
 
 /* line 34, ../sass/font.scss */
-h2, h4, .article_category, .day_wrap {
+.h2, h4, .article_category, .day_wrap {
   font-family: mplus-1p-bold;
 }
 
@@ -48,7 +48,7 @@ h1 {
 }
 
 /* line 53, ../sass/font.scss */
-#left-wrap article h2 {
+#left-wrap article .h2 {
   font-size: 30px;
 }
 /* line 57, ../sass/font.scss */

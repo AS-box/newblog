@@ -99,52 +99,56 @@ header{
 					margin-bottom:15px;
 				}
 			}
-			.article_title{
-				display: block;
-				min-height:58px;
-				border-bottom-width:1px;
-				border-style: dashed;
-				border-color: #e67e22;
-				vertical-align: middle;
-				h2{
-				  padding-top: 20px;
-				  display: block;
-				  margin-left:20px;
-				  width:auto;
-				}
-				.day_wrap{
-				  float:left;
-				  position:relative;
-				  width:50px;
-				  .article_date_triangle_month{
-					text-align: left;
-					width: 0;
-					height: 0;
-					border: 20px solid transparent;
-					border-top: 20px solid $color-orange;
-					border-left: 20px solid $color-orange;
-					@include border-radius(5px);
-					.day_triangle_month{
-						position:absolute;
-						left: 2px;
-						top:20px;
+			  .article_title{
+				  display: table;
+				  min-height:58px;
+				  border-bottom-width:1px;
+				  border-style: dashed;
+				  border-color: #e67e22;
+				  vertical-align: middle;
+				  width:560px;
+				  text-align: left;
+				  .h2{
+					display: table-cell;
+					vertical-align: middle;
+					h2{
+					  width:500px;
+					  margin-left:0px;
 					}
 				  }
-				  .article_date_triangle_day{
-					width: 0;
-					height: 0;
-					margin-top:-37px;
-					border: 20px solid transparent;
-					border-right: 20px solid $color-orange;
-					border-bottom: 20px solid $color-orange;
-					@include border-radius(5px);
-					.day_triangle_day{
-						position:absolute;
-						right:12px;
+				  .day_wrap{
+					float:left;
+					position:relative;
+					width:50px;
+					.article_date_triangle_month{
+					  text-align: left;
+					  width: 0;
+					  height: 0;
+					  border: 20px solid transparent;
+					  border-top: 20px solid $color-orange;
+					  border-left: 20px solid $color-orange;
+					  @include border-radius(5px);
+					  .day_triangle_month{
+						  position:absolute;
+						  left: 2px;
+						  top:20px;
+					  }
+					}
+					.article_date_triangle_day{
+					  width: 0;
+					  height: 0;
+					  margin-top:-37px;
+					  border: 20px solid transparent;
+					  border-right: 20px solid $color-orange;
+					  border-bottom: 20px solid $color-orange;
+					  @include border-radius(5px);
+					  .day_triangle_day{
+						  position:absolute;
+						  right:12px;
+					  }
 					}
 				  }
-				}
-			}
+			  }
 		}
 
 	}
