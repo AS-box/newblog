@@ -175,9 +175,9 @@ header nav #menu li .fa {
   border-bottom-width: 1px;
   border-style: dashed;
   border-color: #e67e22;
-  vertical-align: middle;
   width: 560px;
   text-align: left;
+  margin-bottom: 40px;
 }
 /* line 111, ../sass/layout.scss */
 #wrap #left-wrap article .article_title .h2 {

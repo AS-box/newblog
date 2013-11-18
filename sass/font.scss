@@ -14,6 +14,7 @@ $fontChango:'Chango', cursive;
 $textWhite:#ffffff;
 $mplusBold:mplus-1p-bold;
 $mplusRegular:mplus-1p-regular;
+$color-orange:#e67e22;
 body{
 	font-family: mplus-1p-regular;
 	color:#2c3e50;
@@ -52,6 +53,14 @@ h1{
 		article{
 			.h2{
 				font-size:30px;
+			}
+			h4{
+				font-size: 20px;
+			}
+			i{
+				color: $color-orange;
+				font-size: 25px;
+			  margin-right:5px;
 			}
 		}
 		.article_date_year{
