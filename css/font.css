@@ -15,65 +15,77 @@ body {
   color: #2c3e50;
 }
 
-/* line 25, ../sass/font.scss */
+/* line 26, ../sass/font.scss */
+.web_tool_bar i {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* line 38, ../sass/font.scss */
 nav {
   font-size: 35px;
 }
-/* line 27, ../sass/font.scss */
+/* line 40, ../sass/font.scss */
 nav .fa {
   color: white;
 }
-/* line 30, ../sass/font.scss */
+/* line 43, ../sass/font.scss */
 nav .text_Icon {
   font-family: mplus-1p-bold;
   color: white;
   font-size: 30px;
 }
 
-/* line 37, ../sass/font.scss */
-.h2, h4, .article_category, .day_wrap {
+/* line 50, ../sass/font.scss */
+.h2, h4, .article_category, .day_wrap, h3 {
   font-family: mplus-1p-bold;
 }
 
-/* line 42, ../sass/font.scss */
+/* line 55, ../sass/font.scss */
 h1 {
   font-family: "Chango", cursive;
   color: #e67e22;
   font-size: 48px;
 }
 
-/* line 49, ../sass/font.scss */
+/* line 62, ../sass/font.scss */
 #left-wrap .article_category, #left-wrap .day_wrap {
   color: white;
 }
 
-/* line 56, ../sass/font.scss */
+/* line 69, ../sass/font.scss */
 #left-wrap article .h2 {
   font-size: 30px;
 }
-/* line 59, ../sass/font.scss */
+/* line 72, ../sass/font.scss */
 #left-wrap article h4 {
   font-size: 20px;
 }
-/* line 62, ../sass/font.scss */
+/* line 75, ../sass/font.scss */
 #left-wrap article i {
   color: #e67e22;
   font-size: 25px;
   margin-right: 5px;
 }
-/* line 68, ../sass/font.scss */
+/* line 81, ../sass/font.scss */
 #left-wrap .article_date_year {
   color: #2c3e50;
 }
 
-/* line 73, ../sass/font.scss */
+/* line 88, ../sass/font.scss */
+#right-wrap h3 i {
+  color: #27ae60;
+  font-size: 20px;
+}
+
+/* line 96, ../sass/font.scss */
 .last_logo {
   font-family: "Chango", cursive;
   color: #27ae60;
   font-size: 30px;
 }
 
-/* line 79, ../sass/font.scss */
+/* line 102, ../sass/font.scss */
 footer {
   color: white;
 }

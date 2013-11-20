@@ -20,6 +20,19 @@ $color-green:#27ae60;
 body{
 	font-family: mplus-1p-regular;
 	color:#2c3e50;
+
+}
+.web_tool_bar{
+  i{
+	font-size: 30px ;
+	color:#ffffff;
+  }
+  .facebook{
+
+  }
+  .githab{
+
+  }
 }
 
 nav{
@@ -34,7 +47,7 @@ nav{
 }
 }
 
-.h2,h4,.article_category,.day_wrap{
+.h2,h4,.article_category,.day_wrap,h3{
   font-family:$mplusBold;
 }
 
@@ -69,6 +82,16 @@ h1{
 		  color:#2c3e50;
 		}
 	}
+
+#right-wrap{
+  h3{
+	i{
+	  color: $color-green;
+	  font-size: 20px;
+	}
+  }
+}
+
 
 .last_logo{
   font-family: $fontChango;
