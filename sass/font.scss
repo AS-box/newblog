@@ -36,14 +36,16 @@ body{
 }
 
 nav{
+	display: table;
 	font-size:35px;
 	.fa{
 		color:$textWhite;
 	}
 	.text_Icon{
+	vertical-align: middle;
 	font-family: $mplusBold;
 	color:$textWhite;
-	font-size:30px;
+	font-size:16px;
 }
 }
 
@@ -76,6 +78,7 @@ h1{
 				color: $color-orange;
 				font-size: 25px;
 			  margin-right:5px;
+			  margin-left:5px;
 			}
 		}
 		.article_date_year{
