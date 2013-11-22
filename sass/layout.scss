@@ -7,11 +7,13 @@
 @import "compass";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transform";
 
 
 
-$color-orange:#e67e22;
+$color-orange:#F5851F;
 $color-green:#27ae60;
+$color-blue: #36A3CA;
 $background-color:#ecf0f1;
 $text-main-color:#2c3e50;
 
@@ -45,17 +47,29 @@ body{
   background-color:$background-color;
 }
 
-.top_bar{
-  height:15px;
-  width: 100%;
-  background-color: $text-main-color;
+.comment{
+  position: absolute;
+  display: table;
+  @include rotate(-45deg);
+  z-index: 100;
+  width:300px;
+  text-align: center;
+  height:25px;
+  left:-75px;
+  top:63px;
+  background-color:#ffffff;
+  span{
+	display: table-cell;
+	vertical-align: middle;
+  }
 }
 .web_tool_bar_container{
   width:960px;
-  @include margin-centering;
+  position: absolute;
+  margin-left: 100px;
   .web_tool_bar{
 	position:relative;
-	top:-5px;
+	top:5px;
 	@include border-radius(5px);
 	overflow : hidden;
 	float: right;
@@ -66,6 +80,7 @@ body{
 	  padding-top:5px;
 	  text-align: center;
 	  float: left;
+	  background-color: $color-green;
 	  span{
 		display: table-cell;
 		vertical-align: middle;
@@ -73,17 +88,14 @@ body{
 	}
   }
   .facebook{
-	background-color: $text-main-color;
 	margin-right: 1px;
-  }
-  .github{
-	background-color: $text-main-color;
   }
 }
 
 
 header{
-  background-color:$background-color;
+  position: relative;
+  background-color:#91DAEC;
   height:160px;
   @include padding-top-bottom-40;
   h1{
@@ -92,19 +104,19 @@ header{
 	@include position-center;
   }
   nav{
-	padding-top:40px;
+	padding-top:30px;
 	width:350px;
 	@include position-center;
 	#menu li{
 	  display: table-cell;
-	  background-color:$color-green;
+	  background-color:$color-blue;
 	  height:60px;
 	  width:60px;
 	  text-align:center;
 	  vertical-align:middle;
 	  margin-left:10px;
 	  float:left;
-	  border-radius:50px;
+	  border-radius:5px;
 	  .fa{
 		margin-top:14px;
 	  }
@@ -112,7 +124,6 @@ header{
   }
 }
 #wrap{
-  @include clearfix;
   background-color:$background-color;
   width:960px;
   @include position-center;
@@ -126,15 +137,14 @@ header{
 	  background-color:$color-orange;
 	  display:block;
 	  top:35px;
-	  left:-20px;
 	  height:25px;
-	  width:200px;
+	  width:150px;
 	  text-align:right;
 	  padding-top:8px;
 	  padding-right:5px;
 	}
 	article{
-	  @include box-shadow(rgba(gray, 0.2) 0 0 3px 5px);
+	  min-height: 1177px;
 	  background-color:#ffffff;
 	  @include padding-top-bottom-40;
 	  padding-top:90px;
@@ -155,11 +165,12 @@ header{
 		min-height:58px;
 		border-bottom-width:1px;
 		border-style: dashed;
-		border-color: #e67e22;
+		border-color: $color-blue;
 		width:560px;
 		text-align: left;
 		margin-bottom:40px;
 		.h2{
+		  padding-top:16px;
 		  display: table-cell;
 		  vertical-align: middle;
 		  h2{
@@ -176,8 +187,8 @@ header{
 			width: 0;
 			height: 0;
 			border: 20px solid transparent;
-			border-top: 20px solid $color-orange;
-			border-left: 20px solid $color-orange;
+			border-top: 20px solid $color-blue;
+			border-left: 20px solid $color-blue;
 			@include border-radius(5px);
 			.day_triangle_month{
 			  position:absolute;
@@ -190,8 +201,8 @@ header{
 			height: 0;
 			margin-top:-37px;
 			border: 20px solid transparent;
-			border-right: 20px solid $color-orange;
-			border-bottom: 20px solid $color-orange;
+			border-right: 20px solid $color-blue;
+			border-bottom: 20px solid $color-blue;
 			@include border-radius(5px);
 			.day_triangle_day{
 			  position:absolute;
@@ -204,7 +215,7 @@ header{
 .article_category:before{
   position:absolute;
   top:13px;
-  left:0px;
+  left:-20px;
   content: '';
   width: 0px;
   height:0px;
@@ -232,6 +243,7 @@ header{
 
   }
   #right-wrap{
+	position:relative;
 	line-height: 1.5em;
 	background-color:#ffffff;
 	width:220px;

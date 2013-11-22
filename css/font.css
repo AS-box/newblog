@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Chango);
+@import url(http://fonts.googleapis.com/css?family=Amaranth:700);
 @font-face {
   font-family: mplus-1p-regular;
   src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-regular.ttf") format("truetype");
@@ -9,28 +10,33 @@
   src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-bold.ttf") format("truetype");
 }
 
-/* line 20, ../sass/font.scss */
+/* line 22, ../sass/font.scss */
 body {
   font-family: mplus-1p-regular;
   color: #2c3e50;
 }
 
-/* line 26, ../sass/font.scss */
+/* line 28, ../sass/font.scss */
+.comment {
+  color: #91DAEC;
+}
+
+/* line 32, ../sass/font.scss */
 .web_tool_bar i {
   font-size: 30px;
   color: #ffffff;
 }
 
-/* line 38, ../sass/font.scss */
+/* line 44, ../sass/font.scss */
 nav {
   display: table;
   font-size: 35px;
 }
-/* line 41, ../sass/font.scss */
+/* line 47, ../sass/font.scss */
 nav .fa {
   color: white;
 }
-/* line 44, ../sass/font.scss */
+/* line 50, ../sass/font.scss */
 nav .text_Icon {
   vertical-align: middle;
   font-family: mplus-1p-bold;
@@ -38,57 +44,62 @@ nav .text_Icon {
   font-size: 16px;
 }
 
-/* line 52, ../sass/font.scss */
-.h2, h4, .article_category, .day_wrap, h3 {
+/* line 58, ../sass/font.scss */
+.h2, h4, .article_category, h3 {
+  font-family: mplus-1p-regular;
+}
+
+/* line 61, ../sass/font.scss */
+.day_wrap {
   font-family: mplus-1p-bold;
 }
 
-/* line 57, ../sass/font.scss */
+/* line 65, ../sass/font.scss */
 h1 {
-  font-family: "Chango", cursive;
-  color: #e67e22;
+  font-family: "Chango", sans-serif;
+  color: #ffffff;
   font-size: 48px;
 }
 
-/* line 64, ../sass/font.scss */
+/* line 72, ../sass/font.scss */
 #left-wrap .article_category, #left-wrap .day_wrap {
   color: white;
 }
 
-/* line 71, ../sass/font.scss */
+/* line 79, ../sass/font.scss */
 #left-wrap article .h2 {
   font-size: 30px;
 }
-/* line 74, ../sass/font.scss */
+/* line 82, ../sass/font.scss */
 #left-wrap article h4 {
   font-size: 20px;
 }
-/* line 77, ../sass/font.scss */
+/* line 85, ../sass/font.scss */
 #left-wrap article i {
-  color: #e67e22;
+  color: #f5851f;
   font-size: 25px;
   margin-right: 5px;
   margin-left: 5px;
 }
-/* line 84, ../sass/font.scss */
+/* line 92, ../sass/font.scss */
 #left-wrap .article_date_year {
   color: #2c3e50;
 }
 
-/* line 91, ../sass/font.scss */
+/* line 99, ../sass/font.scss */
 #right-wrap h3 i {
-  color: #27ae60;
+  color: #36a3ca;
   font-size: 20px;
 }
 
-/* line 99, ../sass/font.scss */
+/* line 107, ../sass/font.scss */
 .last_logo {
-  font-family: "Chango", cursive;
+  font-family: "Chango", sans-serif;
   color: #27ae60;
   font-size: 30px;
 }
 
-/* line 105, ../sass/font.scss */
+/* line 113, ../sass/font.scss */
 footer {
   color: white;
 }
